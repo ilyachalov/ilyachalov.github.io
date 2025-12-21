@@ -62,7 +62,7 @@ than the thread it was created on.
         }
 ```
 
-То есть мы создали вот такую обертку, используя свойство [InvokeRequired](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invokerequired) формы и метод [BeginInvoke](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.begininvoke) формы. Эти свойство и метод есть у всех элементов управления, они наследуются от базового класса Control.
+То есть мы создали вот такую обертку, используя свойство [InvokeRequired](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invokerequired) формы и метод [BeginInvoke](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.begininvoke) формы. Эти свойство и метод есть у всех элементов управления, они наследуются от базового класса `Control`.
 
 После этого исправления все вышеперечисленные проблемы исчезли.
 
