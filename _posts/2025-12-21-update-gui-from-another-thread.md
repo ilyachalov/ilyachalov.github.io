@@ -22,13 +22,15 @@ title: "C#, .NET Framework: изменение формы из другого п
 Точнее, выдавалось исключение класса [InvalidOperationException](https://learn.microsoft.com/en-us/dotnet/api/system.invalidoperationexception) с сообщением:
 
 ```
-Недопустимая операция в нескольких потоках: попытка доступа к элементу управления 'Form1' не из того потока, в котором он был создан.
+Недопустимая операция в нескольких потоках: попытка доступа к элементу
+управления 'Form1' не из того потока, в котором он был создан.
 ```
 
 По-английски:
 
 ```
-Cross-thread operation not valid. Control accessed from a thread other than the thread it was created on.
+Cross-thread operation not valid. Control accessed from a thread other
+than the thread it was created on.
 ```
 
 Вот код проблемного метода:
