@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Как начинающим тестировать своего TCP-клиента"
+title: "Как тестировать своего TCP-клиента"
 ---
 
 В рамках изучения сетевого программирования я набрал код программы [TcpEchoClient.cs](https://github.com/ilyachalov/book-examples-TCPIPSockets/blob/main/examples/TcpEchoClient.cs) из книги «TCP/IP Sockets in C#», про которую [писал в прошлом посте](https://ilyachalov.livejournal.com/385676.html).
