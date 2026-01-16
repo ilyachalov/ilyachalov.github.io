@@ -108,7 +108,7 @@ title: "Как тестировать своего TCP-клиента"
 
 К общению со сторонними сайтами по протоколу HTTP лучше вернуться при изучении классов, которые специально для этого есть в рамках платформы «.NET», например: [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient), [WebRequest](https://learn.microsoft.com/en-us/dotnet/api/system.net.webrequest) и так далее.
 
-Я всё же с трудом нашел подходящий сайт (http://web.simmons.edu) и успешно протестировал на нем своего TCP-клиента, предварительно слегка его переписав в том же месте, которое я упоминал выше:
+Я всё же с трудом нашел подходящий сайт ([http://web.simmons.edu](http://web.simmons.edu)) и успешно протестировал на нем своего TCP-клиента, предварительно слегка его переписав в том же месте, которое я упоминал выше:
 
 ```csharp
         args[1] = "GET / HTTP/1.1\r\nHost: web.simmons.edu\r\n\r\n"; // тест
