@@ -5,7 +5,7 @@ title: "Интеграция модульных тестов<br> в проект
 
 Предыдущие посты в этой серии постов:
 - [Как начать изучать тестирование программ на C++](https://ilyachalov.livejournal.com/386716.html);
-- [Начало изучения системы сборки программ CMake](2026-02-23-cmake-build-system-learning.md).
+- [Начало изучения системы сборки программ CMake]({% post_url 2026-02-23-cmake-build-system-learning %}).
 
 Я работаю в операционной системе Windows 10. У меня установлена среда Visual Studio Community с рабочей нагрузкой «Desktop Development with C++». Но в рамках этой статьи я не использую графический интерфейс среды Visual Studio Community, а работаю из [командной строки разработчика](https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell) этой среды. (Обычная командная строка не подойдет, так как в ней без дополнительной настройки недоступны нужные инструменты.)
 
