@@ -4,7 +4,7 @@ title: О сайте
 permalink: /about/
 ---
 
-Меня зовут Ильей. Это один из моих блогов. Я завел этот блог с целью попробовать движок статических сайтов Jekyll и хостинг [GitHub Pages](https://pages.github.com).
+Меня зовут Ильей. Это один из моих блогов. Я завел этот блог с целью попробовать движок статических сайтов Jekyll и хостинг [GitHub Pages](https://pages.github.com). Также у меня есть [блог в ЖЖ](https://ilyachalov.livejournal.com).
 
 Код страниц сайта можно посмотреть в [репозитории на GitHub](https://github.com/ilyachalov/ilyachalov.github.io).
 
