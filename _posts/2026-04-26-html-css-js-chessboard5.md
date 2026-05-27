@@ -26,7 +26,7 @@ title: "HTML, CSS, JS: шахматное поле, часть 5:<br> сохра
 
 Пример (позиция взята из [статьи](https://xchess.ru/11-shakhmatnykh-pozitsij-kotorye-vstrechayutsya-v-tysyachakh-partij.html) на сайте `XChess.ru`):
 
-![](/images/shess-position.jpg)
+![](/images/chess-position.jpg)
 
 ```
 ....bR......bK..
