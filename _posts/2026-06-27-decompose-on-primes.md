@@ -112,7 +112,7 @@ void decomposeOnPrimes(const std::vector<long int>& primes,
 }
 ```
 
-Функция contains&nbsp;— вспомогательная. Она очень простая, я ее написал для улучшения читаемости кода, чтобы каждый раз не писать длинный вызов стандартной функции двоичного поиска `std::binary_search`. Вот код функции `contains`:
+Функция `contains`&nbsp;— вспомогательная. Она очень простая, я ее написал для улучшения читаемости кода, чтобы каждый раз не писать длинный вызов стандартной функции двоичного поиска `std::binary_search`. Вот код функции `contains`:
 
 ```cpp
 bool contains(const std::vector<long int>& primes, long int num)
