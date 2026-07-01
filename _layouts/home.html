@@ -41,6 +41,8 @@ layout: base
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
+
+        {% comment %}
         {%- if paginator.previous_page %}
           <li>
             <a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page" title="Go to Page {{ paginator.previous_page }}">
@@ -50,7 +52,21 @@ layout: base
         {%- else %}
           <li><div class="pager-edge">•</div></li>
         {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
+        {% endcomment %}
+
+        {% for page_num in (1..paginator.total_pages) %}
+          {% if page_num == paginator.page %}
+            <li><div class="current-page">{{ paginator.page }}</div></li>
+          {% else %}
+            {% if page_num == 1 %}
+              <li><a href="{{ '/' | relative_url }}" class="next-page">{{ page_num }}</a></li>
+            {% else %}
+              <li><a href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}" class="next-page">{{ page_num }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% comment %}
         {%- if paginator.next_page %}
           <li>
             <a href="{{ paginator.next_page_path | relative_url }}" class="next-page" title="Go to Page {{ paginator.next_page }}">
@@ -60,6 +76,8 @@ layout: base
         {%- else %}
           <li><div class="pager-edge">•</div></li>
         {%- endif %}
+        {% endcomment %}
+
         </ul>
       </div>
     {%- endif %}
