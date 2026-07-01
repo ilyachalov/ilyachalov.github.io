@@ -31,6 +31,7 @@ remote_theme: jekyll/minima@d4d779a
 # Minima requires the following plugins:
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 #  - jekyll-seo-tag
 #
 # Uncomment the following setting if you wish to disable deprecation warnings
@@ -93,3 +94,7 @@ minima:
 
 # Показывать будущие посты
 future: true
+
+# Настройки пагинации
+paginate: 5
+paginate_path: "/page:num/"
