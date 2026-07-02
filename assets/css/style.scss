@@ -5,3 +5,19 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+.post-tags {
+  margin-top: 2rem;
+  font-size: 0.9em;
+  color: #828282;
+}
+
+.post-tags a.tag {
+  color: #2a7ae2;
+  text-decoration: none;
+  border-bottom: 1px dashed #2a7ae2;
+}
+
+.post-tags a.tag:hover {
+  border-bottom-style: solid;
+}
