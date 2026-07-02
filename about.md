@@ -1,6 +1,6 @@
 ---
 layout: page
-title: О сайте
+title: О блоге
 permalink: /about/
 ---
 
@@ -14,7 +14,7 @@ permalink: /about/
 
 ## Техническая информация
 
-Код страниц этого сайта можно посмотреть в [репозитории на GitHub](https://github.com/ilyachalov/ilyachalov.github.io).
+Код страниц этого блога можно посмотреть в [репозитории на GitHub](https://github.com/ilyachalov/ilyachalov.github.io).
 
 Этот блог использует базовую тему Jekyll, которая называется Minima. Вы сможете найти более подробную информацию о настройке тем движка Jekyll, а также об использовании этого движка в документации по адресу [jekyllrb.com](https://jekyllrb.com/).
 
