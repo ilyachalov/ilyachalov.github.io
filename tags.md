@@ -4,11 +4,27 @@ title: Метки
 permalink: /tags/
 ---
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% if site.posts.size > 0 %}
+
+  {% if site.tags.size > 0 %}
+
+    {% for tag in site.tags %}
+      <h3>{{ tag[0] }}</h3>
+      <ul>
+        {% for post in tag[1] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
     {% endfor %}
-  </ul>
-{% endfor %}
+
+  {% else %}
+
+    <p>На данный момент в блоге нет постов с метками.</p>
+
+  {% endif %}
+
+{% else %}
+
+  <p>На данный момент в блоге нет ни одного поста.</p>
+
+{% endif %}
