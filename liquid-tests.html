@@ -18,27 +18,3 @@ permalink: /liquid-test/
 
 <p>{{ my_array | sort | join: ", " }}</p>
 <p>{{ my_array | sort_natural | join: ", " }}</p>
-
-
-
-    {% capture tag_names %}
-      {% for tag in site.tags %}
-        {{- tag[0] | downcase }}|{{ tag[0] }}{% unless forloop.last %}:::{% endunless -%}
-      {% endfor %}
-    {% endcapture %}
-
-    <p style="background-color: silver;">{{ tag_names }}</p>
-
-    {% assign sorted_tag_names = tag_names | strip | split: ":::" | sort %}
-
-    <p>
-    {% for tag in sorted_tag_names %}
-      {% assign original_tag = tag | split: "|" | last %}
-      <h3>{{ original_tag }}</h3>
-      <ul>
-        {% for post in site.tags[original_tag] %}
-          <li><a href="{{ post.url }}">{{ post.title | remove: "<br>" }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endfor %}
-    </p>
