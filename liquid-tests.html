@@ -22,9 +22,9 @@ permalink: /liquid-test/
 
 
     {% capture tag_names %}
-    {% for tag in site.tags %}
-      {{ tag[0] | downcase }}|{{ tag[0] }}{% unless forloop.last %}:::{% endunless %}
-    {% endfor %}
+      {% for tag in site.tags %}
+        {{ tag[0] | downcase }}|{{ tag[0] }}{% unless forloop.last %}:::{% endunless %}
+      {% endfor %}
     {% endcapture %}
 
     <p style="background-color: silver;">{{ tag_names }}</p>
