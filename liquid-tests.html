@@ -1,0 +1,20 @@
+---
+layout: page
+title: Тесты с Liquid
+permalink: /test/
+---
+
+{% assign my_array = "CSS, Flexbox, draw.io" | split: ", " %}
+
+<p>{{ my_array | sort | join: ", " }}</p>
+<p>{{ my_array | sort_natural | join: ", " }}</p>
+
+{% assign my_array = "Яндекс.Словарь, шахматы, алгоритмы" | split: ", " %}
+
+<p>{{ my_array | sort | join: ", " }}</p>
+<p>{{ my_array | sort_natural | join: ", " }}</p>
+
+{% assign my_array = "Яндекс.Словарь, шахматы, алгоритмы, CSS, Flexbox, draw.io" | split: ", " %}
+
+<p>{{ my_array | sort | join: ", " }}</p>
+<p>{{ my_array | sort_natural | join: ", " }}</p>
