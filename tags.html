@@ -8,6 +8,7 @@ permalink: /tags/
 
   {% if site.tags.size > 0 %}
 
+    {% assign sorted_tags = site.tags | sort %}
     {% for tag in site.tags %}
       <h3>{{ tag[0] }}</h3>
       <ul>
