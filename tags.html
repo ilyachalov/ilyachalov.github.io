@@ -8,6 +8,16 @@ permalink: /tags/
 
   {% if site.tags.size > 0 %}
 
+    <!-- Облако меток -->
+    <div>
+      {% for tag in site.tags %}
+        <a href="#{{ tag[0] | slugify }}">
+          {{ tag[0] }} ({{ tag[1] | size }})
+        </a>
+      {% endfor %}
+    </div>
+
+    <!-- Список постов и якоря для меток -->
     {% capture tag_names %}
       {% for tag in site.tags %}
         {{- tag[0] | downcase }}|{{ tag[0] }}{% unless forloop.last %}:::{% endunless -%}
