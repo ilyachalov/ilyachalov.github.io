@@ -18,7 +18,7 @@ permalink: /tags/
 
     {% for tag in sorted_tag_names %}
       {% assign original_tag = tag | split: "|" | last %}
-      <h3>{{ original_tag }}</h3>
+      <h3 id="{{ original_tag | slugify }}">{{ original_tag }}</h3>
       <ul>
         {% for post in site.tags[original_tag] %}
           <li><a href="{{ post.url }}">{{ post.title | remove: "<br>" }}</a></li>
