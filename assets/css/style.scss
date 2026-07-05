@@ -6,6 +6,8 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
+/* стили для меток в макете поста */
+
 .post-tags {
   margin-top: 2rem;
   font-size: 0.9em;
@@ -20,4 +22,26 @@
 
 .post-tags a.tag:hover {
   border-bottom-style: solid;
+}
+
+/* стили для облака меток в архиве меток */
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-link {
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag-link:hover {
+  background: #007acc;
+  color: #fff;
 }

@@ -9,9 +9,9 @@ permalink: /tags/
   {% if site.tags.size > 0 %}
 
     <!-- Облако меток -->
-    <div>
+    <div class="tag-cloud">
       {% for tag in site.tags %}
-        <a href="#{{ tag[0] | slugify }}">
+        <a href="#{{ tag[0] | slugify }}" class="tag-link">
           {{ tag[0] }} ({{ tag[1] | size }})
         </a>
       {% endfor %}
