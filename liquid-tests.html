@@ -27,6 +27,8 @@ permalink: /liquid-test/
     {% endfor %}
     {% endcapture %}
 
+    <p style="background-color: silver;">{{ tag_names }}</p>
+
     {% assign sorted_tag_names = tag_names | strip | split: ":::" | sort %}
 
     <p>
