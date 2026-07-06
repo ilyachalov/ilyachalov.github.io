@@ -8,16 +8,6 @@ permalink: /tags/
 
   {% if site.tags.size > 0 %}
 
-    <!-- Облако меток -->
-    <div class="tag-cloud">
-      {% for tag in site.tags %}
-        <a href="#{{ tag[0] | slugify }}" class="tag-link">
-          {{ tag[0] }} ({{ tag[1] | size }})
-        </a>
-      {% endfor %}
-    </div>
-
-    <!-- Список постов и якоря для меток -->
     {% capture tag_names %}
       {% for tag in site.tags %}
         {{- tag[0] | downcase }}|{{ tag[0] }}{% unless forloop.last %}:::{% endunless -%}
@@ -26,6 +16,17 @@ permalink: /tags/
 
     {% assign sorted_tag_names = tag_names | strip | split: ":::" | sort %}
 
+    <!-- Облако меток -->
+    <div class="tag-cloud">
+      {% for tag in sorted_tag_names %}
+        {% assign original_tag = tag | split: "|" | last %}
+        <a href="#{{ original_tag | slugify }}" class="tag-link">
+          {{ original_tag }} ({{ site.tags[original_tag] | size }})
+        </a>
+      {% endfor %}
+    </div>
+
+    <!-- Список постов и якоря для меток -->
     {% for tag in sorted_tag_names %}
       {% assign original_tag = tag | split: "|" | last %}
       <h3 id="{{ original_tag | slugify }}">{{ original_tag }}</h3>
