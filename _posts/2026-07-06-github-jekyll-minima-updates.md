@@ -8,8 +8,8 @@ tags: [GitHub Pages, Jekyll]
 
 Про Jekyll я много слышал, но в данном случае меня привлекла возможность попробовать работать с ним без установки самого этого генератора и его зависимостей на свой компьютер. (Намного чаще Jekyll используют с установкой его на свой компьютер. Возможно, в будущем я попробую и такой вариант, он дает больше возможностей.)
 
-* Адрес блога: https://ilyachalov.github.io<br>
-* Исходный код: https://github.com/ilyachalov/ilyachalov.github.io
+* Адрес блога: [https://ilyachalov.github.io](https://ilyachalov.github.io)
+* Исходный код: [https://github.com/ilyachalov/ilyachalov.github.io](https://github.com/ilyachalov/ilyachalov.github.io)
 
 За прошедшее время я написал там два десятка постов, дублируя их в ЖЖ. Параллельно я вносил изменения в тему оформления `minima` (я сделал ее форк [копию] и работаю в нем). В этом и следующем посте/постах я хочу описать самые интересные из этих изменений и вообще некоторые особенности работы с таким блогом.
 
@@ -41,9 +41,9 @@ Jekyll позиционируется как генератор статичес
 
 На моем сайте/блоге изначально были в корневой папке страницы `index.md` (главная страница сайта, без постоянной ссылки) и `about.md` (о сайте, постоянная ссылка: `/about/`). `index.md` я переименовал в `index.html` (потребовалось для включения *пагинации*, об этом будет далее). Еще я добавил страницу `tags.html` (архив меток, постоянная ссылка: `/tags/`). Вот какие адреса у этих страниц:
 
-* https://ilyachalov.github.io/index.html (или https://ilyachalov.github.io)
-* https://ilyachalov.github.io/about/
-* https://ilyachalov.github.io/tags/
+* [https://ilyachalov.github.io/index.html](https://ilyachalov.github.io/index.html) (или [https://ilyachalov.github.io](https://ilyachalov.github.io))
+* [https://ilyachalov.github.io/about/](https://ilyachalov.github.io/about/)
+* [https://ilyachalov.github.io/tags/](https://ilyachalov.github.io/tags/)
 
 Если вы хотите, чтобы существующая страница сайта появилась в виде пункта в верхнем меню при использовании темы оформления **minima**, добавьте информацию об этом в файл с настройками `_config.yml`, который находится в корневой папке проекта. Фрагмент этого файла с нужными настройками у меня (отступы/пробелы имеют значение):
 
