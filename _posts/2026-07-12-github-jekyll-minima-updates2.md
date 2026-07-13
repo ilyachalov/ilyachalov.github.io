@@ -147,9 +147,9 @@ paginate_path: "/page:num/"
 
 Таким образом, после включения и настройки пагинации в моем блоге доступны следующие адреса:
 
-* https://ilyachalov.github.io (страница с самыми свежими 10 постами)
-* https://ilyachalov.github.io/page2/
-* https://ilyachalov.github.io/page3/
+* [https://ilyachalov.github.io](https://ilyachalov.github.io) (страница с самыми свежими 10 постами)
+* [https://ilyachalov.github.io/page2/](https://ilyachalov.github.io/page2/)
+* [https://ilyachalov.github.io/page3/](https://ilyachalov.github.io/page3/)
 
 И так далее.
 
