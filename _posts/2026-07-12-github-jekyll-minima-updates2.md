@@ -26,9 +26,9 @@ tags: [GitHub Pages, Jekyll]
 
 [https://github.com/ilyachalov/ilyachalov.github.io/blob/master/_config.yml](https://github.com/ilyachalov/ilyachalov.github.io/blob/master/_config.yml)
 
-## Плагины Jekyll для сборки на GitHub
+## Плагины Jekyll для сборки на GitHub Pages
 
-Насколько я понял, при том способе работы с блогом (форк репозитория на GitHub без установки Jekyll у себя на компьютере), который я использую, при сборке блога доступен только ограниченный список уже установленных на GitHub плагинов Jekyll. (Это ограничение можно понять: общее число плагинов, по-моему, более трех тысяч, устанавливать на GitHub их все было бы безумием.) Список доступных плагинов можно [посмотреть в документации](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins) GitHub.
+Насколько я понял, при том способе работы с блогом (форк репозитория на GitHub без установки Jekyll у себя на компьютере), который я использую, при сборке блога доступен только ограниченный список уже установленных на GitHub Pages плагинов Jekyll. (Это ограничение можно понять: общее число плагинов, по-моему, более трех тысяч, устанавливать на GitHub Pages их все было бы безумием.) Список доступных плагинов можно [посмотреть в документации](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins) GitHub Pages.
 
 Из этого списка доступных плагинов нужные плагины можно подключить в файле настроек `_config.yml` в корне проекта. Я пока подключил следующее:
 
