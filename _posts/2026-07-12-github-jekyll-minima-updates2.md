@@ -24,7 +24,7 @@ tags: [GitHub Pages, Jekyll]
 
 Я опишу только некоторые настройки, смысл которых постепенно разбирал в случае необходимости. Мой файл с настройками можно посмотреть по следующей ссылке:
 
-https://github.com/ilyachalov/ilyachalov.github.io/blob/master/_config.yml
+[https://github.com/ilyachalov/ilyachalov.github.io/blob/master/_config.yml](https://github.com/ilyachalov/ilyachalov.github.io/blob/master/_config.yml)
 
 ## Плагины Jekyll для сборки на GitHub
 
