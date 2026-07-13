@@ -26,7 +26,8 @@ permalink: /liquid-test/
     {% assign posts = site.posts %}
   {% endif %}
 
-<p>{{ posts.size }}</p>
+<p>site.paginate: {{ site.paginate }}</p>
+<p>posts.size: {{ posts.size }}</p>
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
