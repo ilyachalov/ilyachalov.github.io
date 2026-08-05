@@ -1,0 +1,16 @@
+<svg viewBox="400 80 260 130" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style>.vertex { font-family: Consolas } .edge { font-family: Consolas } .text { font-family: Consolas }</style>
+    <path d="M 430 110L 530 110" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path d="M 430 110L 580 180" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path d="M 530 110L 630 110" fill="none" stroke="#000000" stroke-width="2"></path>
+    <circle cx="430" cy="110" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="430" y="110" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <circle cx="530" cy="110" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="530" y="110" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <circle cx="630" cy="110" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="630" y="110" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <circle cx="480" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="480" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">4</text>
+    <circle cx="580" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="580" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">5</text>
+</svg>
