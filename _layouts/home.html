@@ -33,7 +33,9 @@ layout: base
           </a>
         </h3>
         {%- if site.minima.show_excerpts -%}
+        <div class="post-content e-content" itemprop="articleBody">
           {{ post.excerpt }}
+        </div>
         {%- endif -%}
       </li>
       {%- endfor -%}
