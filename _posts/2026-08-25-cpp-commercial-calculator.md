@@ -11,7 +11,7 @@ tags: [C++, алгоритмы, жадный алгоритм]
 {:start="3"}
 3. [C++: длина кратчайшего пути]({% post_url 2026-08-03-cpp-shortest-path-length %}),
 4. [C++: задача с блохами]({% post_url 2026-08-14-cpp-fleas %}),
-5. [C++: путь спелеолога](% post_url 2026-08-20-cpp-speleologist-way %).
+5. [C++: путь спелеолога]({% post_url 2026-08-20-cpp-speleologist-way %}).
 
 ## Формулировка задачи
 
