@@ -29,7 +29,7 @@ tags: [C++, Windows API, графический интерфейс]
 
 Первая программа просто выводит диалоговое окно с текстовым сообщением. Вот как результат ее работы выглядит у меня на компьютере с операционной системой Windows 10:
 
-![](/images/message-box-winapi.png){:style="display:block; margin-left:auto; margin-right:auto;}
+![](/images/message-box-winapi.png){:style="display:block; margin-left:auto; margin-right:auto;"}
 
 Исходный код программы я пишу ([https://utf8everywhere.org](https://utf8everywhere.org)) в кодировке UTF-8 (без [BOM](https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%BA%D0%B5%D1%80_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D0%B1%D0%B0%D0%B9%D1%82%D0%BE%D0%B2)). Чтобы протестировать возможности Windows API для этой кодировки, я специально ввел в текстовое сообщение в окне кроме английских букв русские буквы, китайские иероглифы и эмодзи. Эмодзи, к сожалению, выводятся в черно-белом виде, но это простительная мелочь.
 
