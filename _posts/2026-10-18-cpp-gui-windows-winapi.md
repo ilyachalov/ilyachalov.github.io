@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C++: графический интерфейс с Windows API"
+title: "C++: графический интерфейс<br> с Windows API"
 tags: [C++, Windows API, графический интерфейс]
 ---
 
