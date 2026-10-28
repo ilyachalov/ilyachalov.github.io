@@ -132,12 +132,12 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     RegisterClass(&wc);
 
     // 2. Создание окна и показ его на экране
-    HWND hwnd{};
-    hwnd = CreateWindowEx(0, CLASS_NAME, L"Моё первое окно с WinAPI",
+    HWND hWnd{};
+    hWnd = CreateWindowEx(0, CLASS_NAME, L"Моё первое окно с WinAPI",
         WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 800, 400,
         NULL, NULL, hInstance, NULL);
-    if (hwnd == NULL) return 0;
-    ShowWindow(hwnd, nCmdShow);
+    if (hWnd == NULL) return 0;
+    ShowWindow(hWnd, nCmdShow);
 
     // 3. Цикл обработки сообщений
     MSG msg{};
@@ -151,16 +151,18 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 }
 
 // функция окна для обработки сообщений
-LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch (uMsg)
     {
         case WM_DESTROY:
             PostQuitMessage(0);
-            return 0;
+            break;
         default:
-            return DefWindowProc(hwnd, uMsg, wParam, lParam);
+            return DefWindowProc(hWnd, uMsg, wParam, lParam);
     }
+
+    return 0;
 }
 ```
 
